@@ -1,0 +1,91 @@
+\section{Optimization} \label{sec:factorial}
+\begin{tcolorbox}
+	Die Fakultät einer Zahl $n\in\mathbb N_0$ is definiert als
+	\begin{equation*}
+		n!=1\cdot 2\cdot 3\cdot\ldots\cdot \left(n-1\right)\cdot n,
+	\end{equation*}
+	wobei $0!=1$ und $1!=1$.
+	Sind $n$ Elemente auf $n$ Plätze zu verteilen, so gibt es dafür $n!$ Möglichkeiten.
+\end{tcolorbox}
+\begin{example}
+	Hier sind zwei Beispiele:
+	\begin{tasks}(2)
+		\task $3!=1\cdot 2\cdot 3=6$
+		\task $\dfrac{5!}{3!}=\dfrac{1\cdot 2\cdot 3\cdot 4\cdot 5}{1\cdot 2\cdot 3}=4\cdot 5=20$
+	\end{tasks}
+\end{example}
+\begin{exercise}
+	Berechnen Sie folgende Ausdrücke.
+	Nehmen Sie dabei $n\geq 2$ an.
+	\begin{tasks}(4)
+		\task $4!$
+		\task $\dfrac{6!}{3!}$
+		\task $\dfrac{\left(n+1\right)!}{\left(n-1\right)!}$
+		\task $\dfrac{n!}{n\cdot\left(n-1\right)}$
+	\end{tasks}
+\end{exercise}
+\begin{comment}
+\begin{solution*}
+	\phantom{text}
+	\begin{tasks}(4)
+		\task $24$
+		\task $120$
+		\task $n\cdot\left(n+1\right)$
+		\task $\left(n-2\right)!$
+	\end{tasks}
+\end{solution*}
+\end{comment}
+\begin{exercise}
+	Wir stellen 4 Leute in eine Reihe.
+	Wie viele Reihenfolgen sind möglich?
+\end{exercise}
+\begin{comment}
+	\begin{solution*}
+		Es gibt $4!$ Möglichkeiten.
+	\end{solution*}
+\end{comment}
+\begin{exercise}
+	Auf einem Parkplatz sind noch 6 Parkplätze frei.
+	Gleichzeitig kommen\ldots
+	\begin{tasks}(3)
+		\task \ldots $3$ Autos an.
+		\task \ldots $5$ Autos an.
+		\task \ldots $6$ Autos an.
+	\end{tasks}
+	Wie viele Möglichkeiten gibt es, die freien Parkplätze den ankommenden Autos zuzuteilen?
+	Schreibe die Lösung als Division von zwei Fakultäten.
+\end{exercise}
+\begin{comment}
+\begin{solution*}
+	\phantom{text}
+	\begin{tasks}(3)
+		\task $\dfrac{6!}{3!}=120$
+		\task $\dfrac{6!}{1!}=720$
+		\task $\dfrac{6!}{0!}=720$
+	\end{tasks}
+\end{solution*}
+\end{comment}
+\begin{exercise}
+	Auf einem Parkplatz mit $n$ Plätzen wollen $k$ Autos parkieren.
+	Wie viele Möglichkeiten gibt es, die freien Parkplätze den ankommenden Autos zuzuteilen? Nehmen Sie $k\leq n$ an.
+\end{exercise}
+\begin{comment}
+\begin{solution*}
+	\phantom{text}
+	Es gibt $\dfrac{n!}{\left(n-k\right)!}$ Möglichkeiten.
+\end{solution*}
+\end{comment}
+\begin{exercise}
+	In einem französischen Restaurant werden bei einem Menü mit 4 Gängen folgende Auswahlmöglichkeiten angeboten:
+	Zuerst entweder ein Salat oder eine Suppe, anschliessend 4 verschiedene Vorspeisen, 3 Hauptspeisen und 5 Desserts.
+	Wie viele Bestellmöglichkeiten gibt es, wenn kein Gang ausgelassen wird?
+\end{exercise}
+\begin{comment}
+\begin{solution*}
+	Tatsächlich braucht man hier keine Fakultät.
+	Die Anzahl der Bestellmöglchkeiten ist
+	\begin{equation*}
+		2\cdot 4\cdot 3\cdot 5=120.
+	\end{equation*}
+\end{solution*}
+\end{comment}
