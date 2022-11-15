@@ -81,12 +81,12 @@
 		for the surrounded area.
 		If we set the derivative
 		\begin{equation*}
-			f^\prime\left(x\right)=-2x+\frac{a}{4}.
+			f^\prime\left(x\right)=a-4x.
 		\end{equation*}
 		to zero and solve for $x$, we obtain $x_0=\frac{a}{4}$.
 		This is indeed a maximum since
 		\begin{equation*}
-			f^{\prime\prime}\left(x\right)=-2
+			f^{\prime\prime}\left(x\right)=-4
 		\end{equation*}
 		is negative at every $x$ and in particular at $x_0$.
 	\end{tasks}
@@ -234,3 +234,42 @@
 \begin{minipage}{0.25\textwidth}
 	\includegraphics[width=\textwidth]{images/triangle}
 \end{minipage}\\
+\begin{solution*}
+	Let $a$ denote the length of the side opposite to $A$.
+	The upper left corner of the square splits $a$ into two line segments.
+	Let $a_1$ denote the line segment from this corner to $B$.
+	Let $x$ and $y$ denote the side lengths of the square, where $y$ is the one parallel to $b$.
+	Then we have
+	\begin{equation*}
+		\frac{y}{b}=\frac{a_1}{a}
+		\qquad\text{and}\qquad
+		\frac{x}{h}=\frac{a-a_1}{a}
+	\end{equation*}
+	If we substitute the fraction $\frac{a_1}{a}$ in the second equation, we get the constraint
+	\begin{equation*}
+		\frac{x}{h}=1-\frac{y}{b}.
+	\end{equation*}
+	This is equivalent to
+	\begin{equation*}
+		y=b\left(1-\frac{x}{h}\right).
+	\end{equation*}
+	The target function is the area of the square
+	\begin{equation*}
+		f\left(x\right)=x\cdot y=-\frac{b}{h}x^2+bx,
+	\end{equation*}
+	where we have substituted $y$ in the second step.
+	The derivative is
+	\begin{equation*}
+		f^{\prime}\left(x\right)=-\frac{2b}{h}x+b.
+	\end{equation*}
+	If we set it to zero, we can solve for the critical point $x_0=\frac{h}{2}$.
+	This is in fact a maximum since
+	\begin{equation*}
+		f^{\prime\prime}\left(x\right)=-\frac{2b}{h}
+	\end{equation*}
+	is negative at every $x$ and in particular at $x_0$.
+	The other side length is given by
+	\begin{equation*}
+		y_0=b\left(1-\frac{x_0}{h}\right)=\frac{b}{2}.
+	\end{equation*}
+\end{solution*}
