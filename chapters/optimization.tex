@@ -51,30 +51,26 @@
 	\end{tasks}
 \end{solution*}
 \end{comment}
+
+\begin{minipage}{0.75\textwidth}
 \begin{exercise}
 	We want to build rectangular garden, where one side is given by a wall.
 	The remaining three sides of the garden are bounded by a fence of length 64 meters.
 	We want to find the length of the sides $x$ and $y$ of the rectangular fence that
-	maximize the surrounded area.\\
-\begin{minipage}{0.66\textwidth}
+	maximize the surrounded area.
 	\begin{tasks}
-		\task Can you guess the result for $x$ and $y$?
-		\task Find a function $f(x)$ that describes the surrounded area.
 		\task Compute the optimal values for $x$ and $y$.
 		\task What if the fence has length $a$ instead?
 	\end{tasks}
-\end{minipage}\hfill
-\begin{minipage}{0.33\textwidth}
-	\includegraphics[width=0.9\textwidth]{images/fence}
-\end{minipage}
 \end{exercise}
+\end{minipage}\hfill
+\begin{minipage}{0.2\textwidth}
+\includegraphics[width=0.9\textwidth]{images/fence}
+\end{minipage}\\
 \begin{comment}
 \begin{solution*}
 	\phantom{text}
 	\begin{tasks}
-		\task The enclosure wants to ``use'' as much of the wall as it can.
-		Thus we expect the edge parallel to the wall to be a bit larger than the the two edges orthogonal to the wall.
-		\task $f(x)=x\cdot\left(64-2x\right)$
 		\task Plug in $a=64$ below.
 		\task The area of the garden is given by $x\cdot y$ with the \textbf{constraint} $2x+y=a$.
 		We use the constraint to replace $y$.
@@ -116,34 +112,34 @@
 	\includegraphics[width=\textwidth]{images/box}
 \end{minipage}\\
 \begin{comment}
-	\begin{solution*}
-		\phantom{text}
-		\begin{tasks}
-			\task The target function is
-			\begin{equation*}
-				f\left(x\right)=x\cdot\left(10-2x\right)^2
-				=4x^3-40x^2+100x
-			\end{equation*}
-			with derivative
-			\begin{equation*}
-				f^{\prime}\left(x\right)=12x^2-80x+100.
-			\end{equation*}
-			The zeros of the derivative are given by
-			\begin{equation*}
-				\frac{1}{6}\cdot\left(20\pm\sqrt{400-4\cdot 3\cdot 25}\right)
-				=\frac{1}{3}\left(10\pm 5\right).
-			\end{equation*}
-			Clearly, $x_0=5$ dm means an empty box.
-			We thus proceed with $x_0=\frac{5}{3}$ dm.
-			We have
-			\begin{equation*}
-				f^{\prime\prime}\left(x\right)=24x-80
-			\end{equation*}
-			and therefore $f^{\prime\prime}(\frac{5}{3})=-40$.
-			We conclude that $x_0=\frac{5}{3}$ dm is a maximum.
-			\task In a similar way, we find $x=\frac{a}{6}$.
-		\end{tasks}
-	\end{solution*}
+\begin{solution*}
+	\phantom{text}
+	\begin{tasks}
+		\task The target function is
+		\begin{equation*}
+			f\left(x\right)=x\cdot\left(10-2x\right)^2
+			=4x^3-40x^2+100x
+		\end{equation*}
+		with derivative
+		\begin{equation*}
+			f^{\prime}\left(x\right)=12x^2-80x+100.
+		\end{equation*}
+		The zeros of the derivative are given by
+		\begin{equation*}
+			\frac{1}{6}\cdot\left(20\pm\sqrt{400-4\cdot 3\cdot 25}\right)
+			=\frac{1}{3}\left(10\pm 5\right).
+		\end{equation*}
+		Clearly, $x_0=5$ dm means an empty box.
+		We thus proceed with $x_0=\frac{5}{3}$ dm.
+		We have
+		\begin{equation*}
+			f^{\prime\prime}\left(x\right)=24x-80
+		\end{equation*}
+		and therefore $f^{\prime\prime}(\frac{5}{3})=-40$.
+		We conclude that $x_0=\frac{5}{3}$ dm is a maximum.
+		\task In a similar way, we find $x=\frac{a}{6}$.
+	\end{tasks}
+\end{solution*}
 \end{comment}
 
 \begin{exercise}
@@ -152,35 +148,35 @@
 	which will maximize its area.
 \end{exercise}
 \begin{comment}
-	\begin{solution*}
-		Let $r$ be the radius and let $\alpha$ be the central angle in radians.
-		The perimeter yields the constraint
-		\begin{equation*}
-			\alpha\cdot r+2r=p,
-		\end{equation*}
-		which yields is equivalent to $\alpha=\frac{p}{r}-2$.
-		The area is given by
-		\begin{equation*}
-			A\left(r\right)=\frac{\alpha}{2\pi}\cdot \pi r^2
-			=-r^2+\frac{p}{2}\cdot r,
-		\end{equation*}
-		where we have substituted $\alpha$ in the last step.
-		The first derivative
-		\begin{equation*}
-			A^{\prime}\left(r\right)=-2r+\frac{p}{2}
-		\end{equation*}
-		yields the critical point $r_0=\frac{p}{4}$.
-		This is a maximum since
-		\begin{equation*}
-			A^{\prime\prime}\left(r\right)=-2
-		\end{equation*}
-		is negative for every radius and in particular for $r_0$.
-		The corresponding angle is given by
-		\begin{equation*}
-			\alpha_0=\frac{p}{r_0}-2=2.
-		\end{equation*}
-		This corresponds to $\alpha_0\cdot\frac{360}{2\pi}\approx 114.6$ degrees.
-	\end{solution*}
+\begin{solution*}
+	Let $r$ be the radius and let $\alpha$ be the central angle in radians.
+	The perimeter yields the constraint
+	\begin{equation*}
+		\alpha\cdot r+2r=p,
+	\end{equation*}
+	which yields is equivalent to $\alpha=\frac{p}{r}-2$.
+	The area is given by
+	\begin{equation*}
+		A\left(r\right)=\frac{\alpha}{2\pi}\cdot \pi r^2
+		=-r^2+\frac{p}{2}\cdot r,
+	\end{equation*}
+	where we have substituted $\alpha$ in the last step.
+	The first derivative
+	\begin{equation*}
+		A^{\prime}\left(r\right)=-2r+\frac{p}{2}
+	\end{equation*}
+	yields the critical point $r_0=\frac{p}{4}$.
+	This is a maximum since
+	\begin{equation*}
+		A^{\prime\prime}\left(r\right)=-2
+	\end{equation*}
+	is negative for every radius and in particular for $r_0$.
+	The corresponding angle is given by
+	\begin{equation*}
+		\alpha_0=\frac{p}{r_0}-2=2.
+	\end{equation*}
+	This corresponds to $\alpha_0\cdot\frac{360}{2\pi}\approx 114.6$ degrees.
+\end{solution*}
 \end{comment}
 
 \begin{minipage}{0.8\textwidth}
